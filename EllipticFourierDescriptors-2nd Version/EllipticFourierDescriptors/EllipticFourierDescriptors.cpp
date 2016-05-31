@@ -409,7 +409,7 @@ void saveDataFromEigentoTxt(std::string fileName, Eigen::MatrixXf& matrix){
 }
 
 void getFinalFittingDataDirectly(std::string srcFileName, std::string dstFileName, int iNoOfHarmonics, bool bNormaliseSizeState, bool bNormaliseOrientationState,
-	int noOfPointsReconstruct,int cols, int deleteCol){
+	int noOfPointsReconstruct,int cols, int deleteCol = 2){
 	Eigen::MatrixXf originalShape;
 	float valueOfRemovedCol;
 	Eigen::MatrixXf fittingShape;
